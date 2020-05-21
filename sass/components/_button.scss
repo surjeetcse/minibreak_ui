@@ -9,7 +9,7 @@
         border-radius: 10rem;
         transition: all .2s;
         position: relative;
-        font-size: 1.6rem;
+        font-size: $default-font-size;
     } 
     &:hover{
         transform: translateY(-.3rem);
@@ -33,6 +33,14 @@
             background-color: $color_white;
         }
     }
+    &--green{
+        background-color: $color_primary_dark;
+        color: $color_white;
+
+        &::after{
+            background-color: $color_primary_dark;
+        }
+    }
     &::after{
         content: "";
         display: inline-block;
@@ -44,11 +52,36 @@
         left: 0;
         z-index: -1;
         transition: all .4s;
+    }
+
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+     }
 }
 
-&--animated {
-    animation: moveInBottom .5s ease-out .75s;
-    animation-fill-mode: backwards;
+.btn-text{
+    &:link,
+    &:visited{
+        color: $color-primary;
+        text-decoration: none;
+        padding: .3rem;
+        display: inline-block;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+        border-bottom: .1rem solid $color-primary;
+    } 
+    &:hover{
+        background-color: $color-primary;
+        color:$color_white;
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba($color_black, 0.2);
 
-}
+        &::after{
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
 }
