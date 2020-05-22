@@ -32,12 +32,29 @@ body {
     }
 
 }
-.headind-secondary{
+.heading-secondary{
     font-size: 2.5rem;
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
     background-image: linear-gradient(to right, $color-primary-light,$color-primary-dark);
+    -webkit-background-clip: text;
+    color:transparent;
+    transition: all .2s;
+    letter-spacing: .2rem;
+
+    &:hover{
+        transform: skewY(2deg) skewX(15deg) scale(1.1) ;
+        text-shadow: .5rem 1rem 2rem rgba($color-black,.2);
+    }
+}
+
+.heading-secondary-white{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color_white,$color_grey_light_2);
     -webkit-background-clip: text;
     color:transparent;
     transition: all .2s;
