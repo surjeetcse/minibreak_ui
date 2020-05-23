@@ -10,15 +10,7 @@
      opacity: 0;
      visibility: hidden;
      transition: all .3s;
-
-     &:target{
-        opacity: 1;
-        visibility: visible; 
-     }
-     &__close{
-        
-     }
-    //  display: none;
+     //  display: none;
 
     &__content{
         @include absCenter;
@@ -28,6 +20,9 @@
         border-radius: 3px;
         display: table;
         overflow: hidden;
+        opacity: 0;
+        transform: translate(-50,-50) scale(.25);
+        transition: all .5s .2s;
     }
 
     &__left{
@@ -49,11 +44,38 @@
         margin-bottom: 4rem;
         column-count: 2;
         column-gap: 4rem;
-        column-rule: 1px solid $color-grey-light-2;
+        column-rule: 1px solid $color_grey_light_2;
         -moz-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
     }
+
+    // Open state
+    &:target{
+        opacity: 1;
+        visibility: visible; 
+     }
+     &:target &__content{
+        opacity: 1;
+        transform: translate(-50,-50) scale(1);
+     }
+     &__close{
+        &:link,
+        &:visited{
+            color: $color_grey_dark;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .2s;
+            line-height: 1;
+        }
+        &:hover{
+            color: $color_primary;
+        }
+     }
 
 
 }
