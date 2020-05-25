@@ -15,6 +15,15 @@
         box-shadow: $box-shadow-light;
         text-align: center;
         cursor: pointer;
+
+        @include respond(tab_land){ 
+            top: 5rem;
+            right: 5rem;
+        }
+        @include respond(phone){ 
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     &__background {
@@ -27,6 +36,14 @@
         background-image: radial-gradient($color_primary,$color_primary_dark);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.87, 1);
+        @include respond(tab_land){ 
+            top: 5rem;
+            right: 5rem;
+        }
+        @include respond(phone){ 
+            top: 3rem;
+            right: 3rem;
+        }
 
     }
     &__nav{
