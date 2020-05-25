@@ -11,7 +11,7 @@
         border: none;
         background-color: rgba($color-white,.5);
         border-bottom: 3px solid transparent;
-        width: 50%;
+        width: 65%;
         display: block;
         transform: all .3s;
 
@@ -47,7 +47,7 @@
     } 
 
     &__radio-group {
-        width: 30%;
+        width: 40%;
         display: inline-block;
 
         @include respond(tab_port){
