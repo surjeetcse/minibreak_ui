@@ -34,3 +34,8 @@ body {
     @include respond(tab_port){ padding: 0;
     }
 }
+
+::selection {
+    background-color: $color_primary;
+    color:$color_white;
+}
