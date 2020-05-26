@@ -9,3 +9,13 @@ https://coverr.co/      // for videos
 //transition effect
 https://cubic-bezier.com/ 
 https://easings.net/
+
+
+
+npm i node-sass --save-dev
+npm install live-server -g
+
+npm i concat --save-dev
+npm i autoprefixer --save-dev
+npm i postcss-cli --save-dev
+ npm i npm-run-all --save-dev
