@@ -19,3 +19,20 @@
 
 .u-margen-top-big{margin-top: 8rem !important;}
 .u-margen-top-huge{margin-top: 10rem !important;}
+
+.heading-secondary-small{
+    font-size: 2.5rem;
+    background-image: linear-gradient(to right, $color-primary,$color-primary-dark);
+}
+.heading-secondary-small-white{
+    font-size: 2.5rem;
+    ackground-image: linear-gradient(to right, $color_white,$color_grey_dark);
+}
+.heading-secondary-big{
+    font-size: 3.5rem;
+    background-image: linear-gradient(to right, $color-primary,$color-primary-dark);
+}
+.heading-secondary-big-white{
+    font-size: 3.5rem;
+    background-image: linear-gradient(to right, $color_white,$color_grey_dark);
+}

@@ -92,4 +92,94 @@
     -ms-flex: 1;
     flex: 1;
     position: relative;
+}
+ 
+.section-header {
+    position: relative;
+    height: 38vw;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - var(--section-rotate)),
+      0 100%
+    );
+    -webkit-clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - var(--section-rotate)),
+      0 100%
+    );
   }
+
+.section-description {
+    background-color: #fcfcfc;
+    margin-top: calc(0px - 9vw);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  
+.section-pictures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    clip-path: polygon(
+      0 9vw,
+      100% 0,
+      100% calc(100% - 9vw),
+      0 100%
+    );
+    -webkit-clip-path: polygon(
+      0 9vw,
+      100% 0,
+      100% calc(100% - 9vw),
+      0 100%
+    );
+    margin-top: calc(0px - 9vw);
+    position: relative;
+    z-index: 1000;
+  }
+.section-map {
+    position: relative;
+    height: 65rem;
+    margin-top: calc(0px - 9vw);
+  }
+
+.section-reviews {
+    margin-top: calc(0px - 9vw);
+    padding: calc(2rem + 9vw) 0;
+    position: relative;
+    z-index: 1000;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(#7dd56f),
+      to(#28b487)
+    );
+    background: linear-gradient(to right bottom, #7dd56f, #28b487);
+    clip-path: polygon(
+      0 9vw,
+      100% 0,
+      100% calc(100% - 9vw),
+      0 100%
+    );
+    -webkit-clip-path: polygon(
+      0 9vw,
+      100% 0,
+      100% calc(100% - 9vw),
+      0 100%
+    );
+}
+.section-cta {
+    margin-top: calc(0px - 12vw);
+    padding: 10rem;
+    padding-bottom: 11rem;
+    padding-top: calc(15rem + 9vw);
+    background-color: #f7f7f7;
+}
+  
+
+
+  
