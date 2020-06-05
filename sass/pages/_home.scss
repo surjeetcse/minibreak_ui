@@ -118,6 +118,10 @@
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    @include respond(tab_port){
+      margin-top: -10rem;
+      display: inline-block;
+    }
   }
   
 .section-pictures {
@@ -178,6 +182,10 @@
     padding-bottom: 11rem;
     padding-top: calc(15rem + 9vw);
     background-color: #f7f7f7;
+
+    @include respond(tab_port){
+      padding: 16rem 4rem 8rem 4re;
+    }
 }
   
 

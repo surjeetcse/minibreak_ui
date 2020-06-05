@@ -51,6 +51,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+      
   }
 
   @media only screen and (max-width: 62.5em) {
@@ -63,6 +64,11 @@
   }
   .header__logo img {
     height: 3.5rem;
+    @include respond(tab_land){
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+    }
   }
   @media only screen and (max-width: 62.5em) {
     .header__logo {

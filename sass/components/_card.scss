@@ -189,6 +189,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 7rem;
+
+    @include respond(phone){
+      display: block;
+  }
   }
 
   .tourcard {
@@ -210,6 +214,13 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    @include respond(phone){
+      height: auto;
+      width: 50%;
+      display: block;
+      left: 25%;
+      margin-bottom: 10rem;
+  }
 
     &__picture {
       position: relative;
