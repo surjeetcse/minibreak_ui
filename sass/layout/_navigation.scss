@@ -296,6 +296,7 @@
   
   .side-nav {
     list-style: none;
+    padding-left: 0;;
   }
   .side-nav li {
     margin: 1rem 0;
@@ -358,7 +359,7 @@
     display: none;
   }
 
-  @include respond(tab_land){
+  @include respond(phone){
     .header {display: none;}
     .tour_navigation{
       float: none;

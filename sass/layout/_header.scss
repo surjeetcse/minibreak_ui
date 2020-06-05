@@ -52,31 +52,14 @@
     -ms-flex-align: center;
     align-items: center;
       
-  }
-
-  @media only screen and (max-width: 62.5em) {
-    .header {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-    }
-  }
+}
   .header__logo img {
     height: 3.5rem;
-    @include respond(tab_land){
-      position: absolute;
-      top: 2rem;
-      left: 2rem;
-    }
-  }
-  @media only screen and (max-width: 62.5em) {
-    .header__logo {
-      -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-      order: -1;
-      margin-bottom: 1.5rem;
-    }
+    // @include respond(tab_port){
+    //   position: absolute;
+    //   top: 2rem;
+    //   left: 2rem;
+    // }
   }
   
   .section-header {

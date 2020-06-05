@@ -323,7 +323,8 @@ body {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  position: relative; }
+  position: relative;
+  text-align: center; }
 
 .section-header {
   position: relative;
@@ -650,7 +651,8 @@ body {
   grid-gap: 7rem; }
   @media (max-width: 37.5em) {
     .card-container {
-      display: block; } }
+      display: inline-block;
+      text-align: center; } }
 
 .tourcard {
   position: relative;
@@ -674,9 +676,7 @@ body {
   @media (max-width: 37.5em) {
     .tourcard {
       height: auto;
-      width: 50%;
-      display: block;
-      left: 25%;
+      display: inline-block;
       margin-bottom: 10rem; } }
   .tourcard__picture {
     position: relative;
@@ -938,7 +938,46 @@ body {
   padding: 5rem 7rem;
   border-radius: 5px; }
 
-.form__photo-upload {
+.account__input {
+  display: block;
+  font-family: inherit;
+  font-size: 1.5rem;
+  color: inherit;
+  padding: 1.25rem 1.75rem;
+  border: none;
+  width: 100%;
+  background-color: #fff;
+  background-color: #f2f2f2;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* Pseudo element (a visible thing that isn't really in the DOM).
+            Also needs -ms- */ }
+
+.account__input:focus {
+  outline: none;
+  border-bottom: 3px solid #55c57a; }
+
+.account__input:focus:invalid {
+  border-bottom: 3px solid #ff7730; }
+
+.account__input::-webkit-input-placeholder {
+  color: #bbb; }
+
+.account__group:not(:last-child) {
+  margin-bottom: 2.5rem; }
+
+.account__label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem; }
+
+.account__photo-upload {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -947,13 +986,13 @@ body {
   align-items: center;
   font-size: 1.6rem; }
 
-.form__user-photo {
+.account__user-photo {
   height: 7.5rem;
   width: 7.5rem;
   border-radius: 50%;
   margin-right: 2rem; }
 
-.form__upload {
+.account__upload {
   width: 0.1px;
   height: 0.1px;
   opacity: 0;
@@ -961,11 +1000,11 @@ body {
   position: absolute;
   z-index: -1; }
 
-.form__upload:focus + label {
+.account__upload:focus + label {
   outline: 3px solid #55c57a;
   outline-offset: 3px; }
 
-.form__upload + label {
+.account__upload + label {
   color: #55c57a;
   display: inline-block;
   text-decoration: none;
@@ -975,7 +1014,7 @@ body {
   transition: all 0.2s;
   cursor: pointer; }
 
-.form__upload + label:hover {
+.account__upload + label:hover {
   background-color: #55c57a;
   color: #fff;
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
@@ -1218,6 +1257,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media (max-width: 37.5em) {
+    .user-view {
+      display: inline-block; } }
 
 .user-view__menu {
   -webkit-box-flex: 32rem;
@@ -1402,27 +1444,8 @@ body {
   -ms-flex-align: center;
   align-items: center; }
 
-@media only screen and (max-width: 62.5em) {
-  .header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; } }
-
 .header__logo img {
   height: 3.5rem; }
-  @media (max-width: 75em) {
-    .header__logo img {
-      position: absolute;
-      top: 2rem;
-      left: 2rem; } }
-
-@media only screen and (max-width: 62.5em) {
-  .header__logo {
-    -webkit-box-ordinal-group: 0;
-    -ms-flex-order: -1;
-    order: -1;
-    margin-bottom: 1.5rem; } }
 
 .section-header {
   position: relative;
@@ -1836,7 +1859,8 @@ body {
     margin-right: 1rem; }
 
 .side-nav {
-  list-style: none; }
+  list-style: none;
+  padding-left: 0; }
 
 .side-nav li {
   margin: 1rem 0;
@@ -1894,7 +1918,7 @@ body {
 .tour_navigation {
   display: none; }
 
-@media (max-width: 75em) {
+@media (max-width: 37.5em) {
   .header {
     display: none; }
   .tour_navigation {

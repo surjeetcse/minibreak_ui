@@ -191,7 +191,8 @@
     grid-gap: 7rem;
 
     @include respond(phone){
-      display: block;
+      display: inline-block;
+      text-align: center;
   }
   }
 
@@ -216,9 +217,7 @@
     flex-direction: column;
     @include respond(phone){
       height: auto;
-      width: 50%;
-      display: block;
-      left: 25%;
+      display: inline-block;
       margin-bottom: 10rem;
   }
 
